@@ -1,6 +1,7 @@
 body{
     font-family: 'Marhey Variable', system-ui;    
-    background-color: #671f9b;
+    /* background-color: #671f9b; */
+    background-color: rgb(56, 27, 75);
     color: #5bd954;
 }
 h1{
@@ -17,9 +18,23 @@ p{
 }
 
 .img-size{
-    width: 25em;
+    width: 26%;
     height: auto;
-    border: solid;
+    border: solid rgb(64, 189, 217);
     padding: 0.5em;
     margin: 1em;
+}
+
+button{
+    border: solid 1px rgb(64, 189, 217);
+    background-color: rgb(56, 27, 75);
+    font-size: 1em;
+    font-family: 'Marhey Variable', system-ui;
+    margin: 1rem;
+}
+
+.buttons{
+    color: #18c224;
+    text-decoration: none;
+    font-weight: 600;
 }

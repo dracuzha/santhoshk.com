@@ -1,6 +1,6 @@
 ---
-import '@fontsource-variable/marhey';
 import "../styles/global.css"
+import '@fontsource-variable/marhey';
 const {pageTitle} = Astro.props
 ---
 
@@ -11,6 +11,10 @@ const {pageTitle} = Astro.props
     <title>{pageTitle}</title>
 </head>
 <body>
+    <h1 style="text-align: center;">{pageTitle} </h1>
+    <nav>
+        <button><a href="/" class="buttons">Home</a></button>
+    </nav>
     <slot>
 
     </slot>

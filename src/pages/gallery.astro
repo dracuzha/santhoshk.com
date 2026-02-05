@@ -1,5 +1,5 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
+import ContentPage from "../layouts/ContentPage.astro"
 import { Image } from "astro:assets";
 import birdImage from "../assets/birdy-wes.jpg";
 import mountainImage from "../assets/mountain-west.jpg";
@@ -8,8 +8,8 @@ import boatImage from "../assets/sunboat.jpg";
 const page = "Gallery";
 ---
 
-<BaseLayout pageTitle={page}>
+<ContentPage pageTitle={page}>
     <Image src={birdImage} alt="Bird Picture" class="img-size"/>
     <Image src={mountainImage} alt="Mountain" class="img-size"/>
     <Image src={boatImage} alt="Boat in dam during sunset time" class="img-size"/>
-</BaseLayout>
+</ContentPage>
