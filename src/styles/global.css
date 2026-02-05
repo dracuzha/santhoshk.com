@@ -1,0 +1,25 @@
+body{
+    font-family: 'Marhey Variable', system-ui;    
+    background-color: #671f9b;
+    color: #5bd954;
+}
+h1{
+    font-size: 2.2rem;
+}
+
+p{
+    font-size: 1.3rem;
+}
+
+.index-links{
+    color: rgb(64, 189, 217);
+    text-decoration: none;
+}
+
+.img-size{
+    width: 25em;
+    height: auto;
+    border: solid;
+    padding: 0.5em;
+    margin: 1em;
+}
