@@ -9,7 +9,8 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@fontsource/fira-sans": "^5.2.7",
+    "@fontsource-variable/chivo-mono": "^5.2.8",
+    "@fontsource-variable/grandstander": "^5.2.7",
     "astro": "^5.17.1"
   }
 }

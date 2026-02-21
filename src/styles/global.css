@@ -1,39 +1,50 @@
-body{
-    font-family: 'Fira Sans', sans-serif;
-    background-color: rgb(56, 27, 75);
-    color: #5bd954;
+:root {
+    --primary-color: #282A36;
+    --paragraph-color: #4FE27A;
+    --link-color: #90E9FF;
+    --border-color: #B48BEA;
+    --button-color: #FC7AD4;
+
+    --primary-font: 'Grandstander Variable', system-ui;
+    --paragraph-font: 'Chivo Mono Variable', monospace;
 }
-h1{
-    font-size: 2.2rem;
+
+body{
+    border: solid var(--border-color);
+    margin: 2em;
+    padding: 2em;
+    font-family: var(--primary-font);
+    background-color: var(--primary-color);
+    color: var(--paragraph-color);
 }
 
 p{
-    font-size: 1.3rem;
+    font-family: var(--paragraph-font);
 }
 
 .index-links{
-    color: rgb(64, 189, 217);
+    color: var(--link-color);
     text-decoration: none;
 }
 
 .img-size{
     width: 26%;
     height: auto;
-    border: solid rgb(64, 189, 217);
+    border: solid var(--border-color);
     padding: 0.5em;
     margin: 1em;
 }
 
 button{
-    border: solid 1px rgb(64, 189, 217);
-    background-color: rgb(56, 27, 75);
+    border: solid 1px var(--border-color);
+    background-color: var(--button-color);
     font-size: 1em;
-    font-family: 'Marhey Variable', system-ui;
     margin: 1rem;
 }
 
 .buttons{
-    color: #18c224;
+    color: #282A36;
+    font-family: var(--primary-font);
     text-decoration: none;
     font-weight: 600;
 }
