@@ -9,32 +9,30 @@
     --paragraph-font: 'Chivo Mono Variable', monospace;
 }
 
-body{
+html{
     border: solid var(--border-color);
     margin: 2em;
     padding: 2em;
+    font-size: 16px;
     font-family: var(--primary-font);
     background-color: var(--primary-color);
     color: var(--paragraph-color);
 }
 
+h1{
+    font-size: clamp(1.8rem, 2.5vw, 2rem);
+}
+
 p{
     font-family: var(--paragraph-font);
+    font-size: clamp(1rem, 2.5vw, 1.3rem);
 }
 
 .index-links{
     color: var(--link-color);
     text-decoration: none;
 }
-
-.img-size{
-    width: 26%;
-    height: auto;
-    border: solid var(--border-color);
-    padding: 0.5em;
-    margin: 1em;
-}
-
+    
 button{
     border: solid 1px var(--border-color);
     background-color: var(--button-color);
@@ -43,8 +41,37 @@ button{
 }
 
 .buttons{
-    color: #282A36;
+    color: var(--primary-color);
     font-family: var(--primary-font);
     text-decoration: none;
     font-weight: 600;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.grid-item {
+    background: #2f3346;
+    border: 1px solid var(--border-color);
+    padding: 1rem;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.grid-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }

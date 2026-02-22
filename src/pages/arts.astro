@@ -10,8 +10,10 @@ const page = "Arts"
 
 <ContentPage pageTitle={page}>
     <h2>Pixels arts :)</h2>
-    <Image src={cat} alt="Cat" class="img-size"/>
-    <Image src={flower} alt="Flower" class="img-size"/>
-    <Image src={beer} alt="beer" class="img-size"/>
-    <Image src={tf} alt="a man i guess" class="img-size"/>
+    <div class="grid-container">
+        <div class="grid-item"><Image src={cat} alt="Cat" class="img-size"/></div>
+        <div class="grid-item"><Image src={flower} alt="Flower" class="img-size"/></div>
+        <div class="grid-item"><Image src={beer} alt="beer" class="img-size"/></div>
+        <div class="grid-item"><Image src={tf} alt="a man i guess" class="img-size"/></div>
+    </div>
 </ContentPage>

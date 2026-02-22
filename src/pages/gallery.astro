@@ -9,7 +9,9 @@ const page = "Gallery";
 ---
 
 <ContentPage pageTitle={page}>
-    <Image src={birdImage} alt="Bird Picture" class="img-size"/>
-    <Image src={mountainImage} alt="Mountain" class="img-size"/>
-    <Image src={boatImage} alt="Boat in dam during sunset time" class="img-size"/>
+    <div class="grid-container">
+        <div class="grid-item"><Image src={birdImage} alt="Bird Picture" class="img-size"/></div>
+        <div class="grid-item"><Image src={mountainImage} alt="Mountain" class="img-size"/></div>
+        <div class="grid-item"><Image src={boatImage} alt="Boat in dam during sunset time" class="img-size"/></div>
+    </div>
 </ContentPage>
