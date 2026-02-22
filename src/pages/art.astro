@@ -1,0 +1,19 @@
+---
+import ContentPage from "../layouts/ContentPage.astro"
+import Image from "astro/components/Image.astro"
+import cat from "../assets/cat-i-guess.png"
+import flower from "../assets/flower-i-guess.png"
+import beer from "../assets/beer-i-guess.png"
+import tf from "../assets/i-dont-know-wtf-is-this.png"
+const page = "Art"
+---
+
+<ContentPage pageTitle={page}>
+    <h2>Pixels art :)</h2>
+    <div class="grid-container">
+        <div class="grid-item pixelart"><Image src={cat} alt="Cat" class="img-size"/></div>
+        <div class="grid-item pixelart"><Image src={flower} alt="Flower" class="img-size"/></div>
+        <div class="grid-item pixelart"><Image src={beer} alt="beer" class="img-size"/></div>
+        <div class="grid-item pixelart"><Image src={tf} alt="a man i guess" class="img-size"/></div>
+    </div>
+</ContentPage>
