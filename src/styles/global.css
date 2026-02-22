@@ -10,9 +10,7 @@
 }
 
 html{
-    /* border: solid var(--border-color); */
-    margin: 2em;
-    padding: 2em;
+    margin: 1.2em;
     font-size: 16px;
     font-family: var(--primary-font);
     background-color: var(--primary-color);
@@ -25,17 +23,12 @@ h1{
 
 p{
     font-family: var(--paragraph-font);
-    font-size: clamp(1rem, 2.5vw, 1.3rem);
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
 }
 
 .index-links{
     color: var(--link-color);
     text-decoration: none;
-}
-
-nav {
-    align-items: center;
-    justify-content: center;
 }
     
 button{
@@ -54,37 +47,25 @@ button{
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 2rem;
-    max-width: 1200px;
-    /* margin: 0 auto; */
-    padding: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto;
+    gap: 1em;
 }
 
 .grid-item {
-    background: #2f3346;
-    border: 1px solid var(--border-color);
-    padding: 1rem;
-    overflow: hidden;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.grid-item img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    display: block;
+    display: grid;
 }
 
 .landscape img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
     aspect-ratio: 16/9;
 }
 
 .pixelart img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
     aspect-ratio: 1/1;
-}
-
-.grid-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
